@@ -1,10 +1,10 @@
 ---
 
-# Name Initials Generator
+# **Name Initials Generator**
 
 A simple Flask web app that takes a user's full name and generates their initials.  
 Example:  
-`John Doe Smith` → J.D.S.
+`Macharla Swayam Prakash` → M.S.P.
 
 ---
 
@@ -99,3 +99,4 @@ http://127.0.0.1:5000
 * Deploy online via Render, Replit, or Vercel
 
 ```
+
