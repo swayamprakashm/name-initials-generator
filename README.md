@@ -4,7 +4,7 @@
 
 A simple Flask web app that takes a user's full name and generates their initials.  
 Example:  
-"Macharla Swayam Prakash" → M.S.P.
+  Macharla Swayam Prakash → M.S.P.
 
 ---
 
@@ -99,5 +99,6 @@ http://127.0.0.1:5000
 * Deploy online via Render, Replit, or Vercel
 
 ```
+
 
 
