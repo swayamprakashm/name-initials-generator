@@ -1,0 +1,109 @@
+:root {
+    --bg-gradient: linear-gradient(to right, #0064fa, #ffffff);
+    --text-color: #333;
+    --form-bg: #f9f9f9;
+    --button-bg: #0064fa;
+    --button-hover: rgb(0, 94, 255);
+    --result-color: #ffffff;
+    --input-bg: white;
+    --input-text: black;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+    --bg-gradient: linear-gradient(to right, #111111, #333333);
+    --text-color: #f1f1f1;
+    --form-bg: #222;
+    --button-bg: #0064fa;
+    --button-hover: #0064fa;
+    --result-color: white;
+    --input-bg: #333;
+    --input-text: white;
+    --shadow: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease, color 0.3s ease;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: white;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+h3 {
+    margin-top: 25px;
+    color: var(--result-color);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
