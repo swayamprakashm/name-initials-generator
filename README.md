@@ -82,11 +82,11 @@ http://127.0.0.1:5000
 
 ### Light Mode
 
-![Light Mode Screenshot](screenshots/light-mode.png)
+![Light Mode Screenshot](Screenshots/light-mode.png)
 
 ### Dark Mode
 
-![Dark Mode Screenshot](screenshots/dark-mode.png)
+![Dark Mode Screenshot](Screenshots/dark-mode.png)
 
 ---
 
@@ -98,6 +98,7 @@ http://127.0.0.1:5000
 * Deploy online via Render, Replit, or Vercel
 
 ```
+
 
 
 
